@@ -1,2 +1,0 @@
-include ':app'
-rootProject.name = "for cse 2200"
