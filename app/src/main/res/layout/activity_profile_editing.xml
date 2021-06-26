@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile"
+    android:background="@drawable/background1">
+
+    <Button
+        android:id="@+id/back2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/button_design3"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/save1"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.923" />
+
+    <Button
+        android:id="@+id/save1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.928" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="126dp"
+        android:layout_height="121dp"
+        android:layout_gravity="center|right"
+        app:layout_constraintBottom_toTopOf="@+id/save1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.982"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.029"
+        app:srcCompat="@drawable/user" />
+
+    <TextView
+        android:id="@+id/editTextTextPersonName"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="218dp"
+        android:layout_height="74dp"
+        android:alpha="0.9"
+        android:background="#E84C1F9F"
+        android:clickable="false"
+        android:ems="10"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Your Personal Details"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.074" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="436dp"
+        android:scrollIndicators="right"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.585">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="25dp">
+
+            <TableLayout
+                android:id="@+id/tableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.334">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:layout_editor_absoluteX="2dp"
+                    tools:layout_editor_absoluteY="141dp">
+
+                    <TextView
+                        android:id="@+id/pename"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:clickable="false"
+                        android:text="Name"
+                        android:textColor="@color/black"
+                        tools:layout_editor_absoluteX="1dp"
+                        tools:layout_editor_absoluteY="171dp" />
+
+                    <EditText
+                        android:id="@+id/editname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:cursorVisible="true"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:shadowColor="#FFFFFF"
+                        android:textColor="#103A8E"
+                        android:textCursorDrawable="@null"
+                        tools:layout_editor_absoluteX="89dp"
+                        tools:layout_editor_absoluteY="157dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:layout_editor_absoluteX="2dp"
+                    tools:layout_editor_absoluteY="202dp">
+
+                    <TextView
+                        android:id="@+id/peemail"
+
+                        android:layout_width="88dp"
+                        android:layout_height="60dp"
+                        android:text="email"
+                        android:textColor="@color/black"
+                        tools:layout_editor_absoluteX="1dp"
+                        tools:layout_editor_absoluteY="231dp" />
+
+                    <TextView
+                        android:id="@+id/editemail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:shadowColor="#FFFFFF"
+                        android:textColor="#103A8E"
+                        android:textCursorDrawable="@null"
+                        tools:layout_editor_absoluteX="89dp"
+                        tools:layout_editor_absoluteY="218dp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:layout_editor_absoluteX="2dp"
+                    tools:layout_editor_absoluteY="262dp">
+
+                    <TextView
+                        android:id="@+id/pepassword"
+                        android:layout_width="88dp"
+                        android:layout_height="60dp"
+                        android:text="Password"
+                        android:textColor="@color/black"
+                        tools:layout_editor_absoluteX="2dp"
+                        tools:layout_editor_absoluteY="276dp" />
+
+                    <EditText
+                        android:id="@+id/editpassword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:shadowColor="#FFFFFF"
+                        android:textColor="#103A8E"
+                        android:textCursorDrawable="@null"
+                        tools:layout_editor_absoluteX="90dp"
+                        tools:layout_editor_absoluteY="262dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:layout_editor_absoluteX="2dp"
+                    tools:layout_editor_absoluteY="322dp">
+
+                    <TextView
+                        android:id="@+id/pebirth"
+                        android:layout_width="88dp"
+                        android:layout_height="60dp"
+                        android:text="Date of Birth
+                        dd/mm/yy"
+                        android:textColor="@color/black"
+                        tools:layout_editor_absoluteX="1dp"
+                        tools:layout_editor_absoluteY="352dp" />
+
+                    <EditText
+                        android:id="@+id/editbirth"
+                        android:layout_width="322dp"
+                        android:layout_height="match_parent"
+                        android:ems="10"
+                        android:hint="dd/mm/yy"
+                        android:inputType="date"
+                        android:textColor="#103A8E"
+                        android:textCursorDrawable="@null" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:layout_editor_absoluteX="2dp"
+                    tools:layout_editor_absoluteY="382dp">
+
+                    <TextView
+                        android:id="@+id/pegender"
+                        android:layout_width="88dp"
+                        android:layout_height="60dp"
+                        android:text="Gender"
+                        android:textColor="@color/black"
+                        tools:layout_editor_absoluteX="1dp"
+                        tools:layout_editor_absoluteY="412dp" />
+
+                    <EditText
+                        android:id="@+id/editgender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:shadowColor="#FFFFFF"
+                        android:textColor="#103A8E"
+                        android:textCursorDrawable="@null"
+                        tools:layout_editor_absoluteX="89dp"
+                        tools:layout_editor_absoluteY="398dp" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:layout_editor_absoluteX="2dp"
+                    tools:layout_editor_absoluteY="382dp">
+
+                    <TextView
+                        android:layout_width="88dp"
+                        android:layout_height="60dp"
+                        android:text="ID"
+                        android:textColor="@color/black"
+                        tools:layout_editor_absoluteX="1dp"
+                        tools:layout_editor_absoluteY="412dp" />
+
+                    <TextView
+                        android:id="@+id/editid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:shadowColor="#FFFFFF"
+                        android:textColor="#103A8E"
+                        android:textCursorDrawable="@null"
+                        tools:layout_editor_absoluteX="89dp"
+                        tools:layout_editor_absoluteY="398dp" />
+                </TableRow>
+            </TableLayout>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="choose"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.91"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.199" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
