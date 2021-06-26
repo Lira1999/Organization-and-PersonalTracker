@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Calendar Sharing"
+        android:id="@+id/calendarsharing"
+        />
+    <item
+        android:title="sign out"
+        android:id="@+id/signout"
+        />
+
+
+</menu>

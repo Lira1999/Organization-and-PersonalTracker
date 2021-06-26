@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login_form"
+    android:background="@drawable/loginpage1"
+    android:orientation="vertical"
+    android:padding="60dp"
+    >
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/user"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:boxStrokeColor="@color/black"
+        android:layout_marginTop="30dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emaillogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#99141414"
+            android:backgroundTint="@color/white"
+            android:fontFamily="cursive"
+            android:hint="Email"
+            android:layout_marginTop="50dp"
+            android:inputType="text"
+            android:textColor="#8C10A1"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:boxStrokeColor="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordlogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#99141414"
+            android:backgroundTint="@color/white"
+            android:fontFamily="cursive"
+            android:hint="Password"
+            android:inputType="text"
+            android:textColor="#8C10A1"
+            android:textSize="25sp"
+            android:textStyle="bold"  />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/login2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log in"
+        android:textSize="20sp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_rounding"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#FF06554E"
+        android:text="If not registered please click REGISTER"
+        android:textColor="@color/black"
+        app:drawableTint="#06554E" />
+
+    <Button
+        android:id="@+id/register2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_rounding"
+        android:text="Register"
+        android:textSize="20sp" />
+    <ProgressBar
+        android:id="@+id/progressbrsignin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+</LinearLayout>

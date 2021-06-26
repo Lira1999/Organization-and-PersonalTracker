@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Edit_Note"
+    android:background="#d1c4e9"
+    android:padding="25dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/star">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/updatetitle"
+            android:hint="Title"
+            android:layout_marginTop="20dp"
+            android:textColor="#ede7f6"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
+        <EditText
+            android:layout_below="@id/updatetitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/updatedescription"
+            android:hint="Description"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/updatefloatingbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_check_24"
+            android:backgroundTint="@color/purple_200"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
